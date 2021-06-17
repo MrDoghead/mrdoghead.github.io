@@ -177,7 +177,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-06-17 09:35:34" itemprop="dateModified" datetime="2021-06-17T09:35:34+08:00">2021-06-17</time>
+                <time title="Modified: 2021-06-17 10:15:43" itemprop="dateModified" datetime="2021-06-17T10:15:43+08:00">2021-06-17</time>
               </span>
 
           
@@ -194,112 +194,14 @@
           <p>记得高中时玩了一阵子魔方，三阶四阶到五阶，但高三后就没碰了以至于公式都忘记了，正巧最近收货一个三阶魔方，分享一下新手级还原攻略（个人初步整理）。</p>
 <p>在开始之前先讲一下常规还原的步骤：底面十字-&gt;底层还原-&gt;第二层还原-&gt;顶面还原-&gt;顶层还原。底层的还原其实不需要记公式，多玩几次就知道了，后面两层我希望减少公式量，但是会慢一点，所以time-space trade-off吧。</p>
 <img src="images/d_rubiks_cube/mf0-1.jpeg" width="600" height="400" alt="mf0-1">
-
-<p>另外还需要约定一些东西，有三种颜色的方块是角块一共8个，两种颜色的方块是棱块一共12个，只有一个颜色的是中心块一个6个（中心块代表这个面的颜色，不会改变），本教程的例子中底面颜色为白色，顺时针/逆时针均按照自己面朝魔方的方向为准，后面的每个公式都由单个动作构成，具体动作及含义：</p>
-<p>左上——左侧面（向上扭）顺时针转动90度</p>
-<p>左下——左侧面（向下扭）逆时针转动90度</p>
-<p>右上——右侧面顺时针转动90度</p>
-<p>右下——右侧面逆时针转动90度</p>
-<p>顶左——顶层（向左扭）顺时针转动90度</p>
-<p>顶右——顶层（向右扭）逆时针转动90度</p>
-<p>底左——底层顺时针转动90度</p>
-<p>底右——底层逆时针转动90度</p>
-<p>前顺——前侧面顺时针转动90度</p>
-<p>前逆——前侧面逆时针转动90度</p>
-<p>后顺——后侧面顺时针转动90度</p>
-<p>后逆——后侧面逆时针转动90度</p>
-<p>为了方便起见，下文中若只出现上、下、左、右、顺、逆，就是指右层、顶层、前层，如“上”表示“右上”，这样记起来也简单。</p>
-<p>下图可能是网上的约定说法吧，emmm我暂时比较习惯我的叫法，实际中可以任选自己喜欢的基准然后改写公式，熟练之后就都是肌肉记忆了。</p>
-<img src="/images/d_rubiks_cube/mf0-2.jpeg" width="400" height="600" alt="mf0-2">
-
-
-<h2 id="第一关"><a href="#第一关" class="headerlink" title="第一关"></a>第一关</h2><p>目标：底面十字 + 侧面中心与底层中心同色</p>
-<p>操作：我们以白色为底面，寻找各条棱中的带有白色的块，转动魔方在底面形成白色十字，并且需要将四个侧面中心块的颜色与相邻底层棱的中心块颜色一致。我个人的方法是先找到一个侧面中心颜色（比如绿色）相同的带有白色的棱块（绿+白）与该中心块相连，然后只要转动这个侧面就可以完成一组，四个侧面一共做四组。</p>
-<p>本关不需要公式就可以完成。</p>
-<img src="/images/d_rubiks_cube/mf1-1.jpeg" width="600" height="400" alt="mf1-1">
-
-<h2 id="第二关"><a href="#第二关" class="headerlink" title="第二关"></a>第二关</h2><p>目标：还原底层</p>
-<p>操作：可以看到现在我们底层的四个角应该是没有复原的，这一步就是要将它们复原。这里需要分类讨论：</p>
-<h3 id="情况1-顶层白色的角块白色朝左边"><a href="#情况1-顶层白色的角块白色朝左边" class="headerlink" title="情况1 顶层白色的角块白色朝左边"></a>情况1 顶层白色的角块白色朝左边</h3><img src="/images/d_rubiks_cube/mf2-1.jpeg" width="600" height="400" alt="mf2-1">
-
-<p><strong>公式：左-上-右-下</strong></p>
-<h3 id="情况2-顶层白色的角块白色朝右边"><a href="#情况2-顶层白色的角块白色朝右边" class="headerlink" title="情况2 顶层白色的角块白色朝右边"></a>情况2 顶层白色的角块白色朝右边</h3><img src="/images/d_rubiks_cube/mf2-2.jpeg" width="600" height="400" alt="mf2-2">
-
-<p><strong>公式：上-左-下</strong></p>
-<h3 id="情况3-顶层白色的角块白色朝上"><a href="#情况3-顶层白色的角块白色朝上" class="headerlink" title="情况3 顶层白色的角块白色朝上"></a>情况3 顶层白色的角块白色朝上</h3><img src="/images/d_rubiks_cube/mf2-3.jpeg" width="600" height="400" alt="mf2-3">
-
-<p><strong>公式：左-上-右-下 X3</strong></p>
-<p>注意：如果白色角块本来就在底层但是位置不对，那就先将其放到顶层（直接上-左-下一套组合拳将其打到顶层），然后再根据这三类情况操作。</p>
-<p>单个完成效果如图</p>
-<img src="/images/d_rubiks_cube/mf2-4.jpeg" width="600" height="400" alt="mf2-4">
-
-<p>底层全部还原后如下图</p>
-<img src="/images/d_rubiks_cube/mf2-5.jpeg" width="600" height="400" alt="mf2-5">
-
-<h2 id="第三关"><a href="#第三关" class="headerlink" title="第三关"></a>第三关</h2><p>目标：还原第二层</p>
-<p>操作：第二层需要还原的四条棱的中间块，我们可以知道中间块肯定是在棱中间的，排除已经还原的底层，需要转移的中间块肯定是在顶层棱或者第二层上，这里也需要分类讨论(建议首先转动顶层使得一个顶层棱的中间块颜色与侧面中心块相连）：</p>
-<h3 id="情况1-同色在右"><a href="#情况1-同色在右" class="headerlink" title="情况1 同色在右"></a>情况1 同色在右</h3><p>这种情况如图所示，侧面中心为红色，顶层棱红色与其相连，且在我们的右手边，此时我们需要将顶层的红蓝色块转移到第二层的红蓝面交接棱上，即交换两个圈中的方块</p>
-<p><strong>公式：右-逆-左-顺 - 左-上-右-下</strong></p>
-<img src="/images/d_rubiks_cube/mf3-1.jpeg" width="600" height="400" alt="mf3-1">
-
-<p>转移后得到</p>
-<img src="/images/d_rubiks_cube/mf3-2.jpeg" width="600" height="400" alt="mf3-2">
-
-<h3 id="情况2-同色在左"><a href="#情况2-同色在左" class="headerlink" title="情况2 同色在左"></a>情况2 同色在左</h3><p>与第一种情况相反，同色发生在左侧面，公式也与之前很像（四个一组，相反）。</p>
-<p><strong>公式：左-上-右-下 - 右-逆-左-顺</strong></p>
-<img src="/images/d_rubiks_cube/mf3-3.jpeg" width="600" height="400" alt="mf3-3">
-
-<h3 id="情况3-目标块已在第二层但位置错误"><a href="#情况3-目标块已在第二层但位置错误" class="headerlink" title="情况3 目标块已在第二层但位置错误"></a>情况3 目标块已在第二层但位置错误</h3><p>这种情况是目标块已经在第二层上，但是位置不对，包括如图显示的左右颜色需要对调，以及该棱块所对应的颜色在另一条棱的情况。应对的方法就是重复情况1&amp;2的操作（需要一点理解）。</p>
-<img src="/images/d_rubiks_cube/mf3-4.jpeg" width="600" height="400" alt="mf3-4">
-
-<p>第二层完成图</p>
-<img src="/images/d_rubiks_cube/mf3-5.jpeg" width="600" height="400" alt="mf3-5">
-
-<h2 id="第四关"><a href="#第四关" class="headerlink" title="第四关"></a>第四关</h2><p>目标：还原顶面</p>
-<p>操作：在还原完第二层后，观察顶层（我这里是黄色），你可能会遇到“L”形和“一”形图案(如下图所示)，甚至“·”形（只有一个中心黄色块），需要将“L”形转变成“一”形再转变为“鱼”形。如何转变呢？套下面的公式1-2次即可得到“鱼”形。注意！注意！注意！一定要按照如图的方向摆放再套公式！</p>
-<p><strong>公式：顺-上-左-下-右-逆</strong></p>
-<img src="/images/d_rubiks_cube/mf4-1.jpeg" width="800" height="400" alt="mf4-1">
-
-<p>然后可能会得到“鱼”形或者“由”形（如果是其他类型建议再套几次公式），下面分类讨论：</p>
-<h3 id="情况1-鱼形"><a href="#情况1-鱼形" class="headerlink" title="情况1 鱼形"></a>情况1 鱼形</h3><p>如图所示，“鱼”形也有两种可能（仔细观察），我目前没有好的归纳，所以分别记忆公式吧</p>
-<img src="/images/d_rubiks_cube/mf4-2.jpeg" width="600" height="400" alt="mf4-2">
-
-<p><strong>图左公式：右下-右-右上-右-右下-右-右-右上</strong></p>
-<p><strong>图右公式：左下-左-左上-左-左下-左-左-左上</strong></p>
-<p>蛮对称的，别搞混就行。</p>
-<h3 id="情况2-由形"><a href="#情况2-由形" class="headerlink" title="情况2 由形"></a>情况2 由形</h3><p>由形也有两种情况，区别在于“由”的顶部两边的顶角的颜色（例如我顶面是黄色）在两侧还是同侧，但是我们只需要一个公式就可以将其转化为情况1的“鱼”形（减少了公式数量），再用上面鱼形的公式就能完成顶面，注意！注意！注意！虽然公式一样但是方向不一样，建议两侧的情况“由”朝左，同侧的情况“由”朝远方。（待试验）</p>
-<img src="/images/d_rubiks_cube/mf4-3.jpeg" width="400" height="600" alt="mf4-3">
-
-<img src="/images/d_rubiks_cube/mf4-4.jpeg" width="400" height="600" alt="mf4-4">
-
-<p><strong>公式：下-右-上-右-下-右-右-上</strong></p>
-<h2 id="第五关"><a href="#第五关" class="headerlink" title="第五关"></a>第五关</h2><p>目标：还原顶层</p>
-<p>操作：观察顶层的侧面，会出现两种情况</p>
-<h3 id="情况1-有一面的两个顶角同色"><a href="#情况1-有一面的两个顶角同色" class="headerlink" title="情况1 有一面的两个顶角同色"></a>情况1 有一面的两个顶角同色</h3><p>如图所示，顶层中有一面出现两个蓝色顶角，将其朝向右侧，然后顶面（黄色）对着自己，套用公式</p>
-<img src="/images/d_rubiks_cube/mf5-1.jpeg" width="600" height="400" alt="mf5-1">
-
-<p><strong>公式：下-下-底右-底右-下-顶右-上-底左-底左-下-顶左-下</strong></p>
-<h3 id="情况2-没有任何一面有同色的顶角"><a href="#情况2-没有任何一面有同色的顶角" class="headerlink" title="情况2 没有任何一面有同色的顶角"></a>情况2 没有任何一面有同色的顶角</h3><p>需要先转变为第一种情况，这里建议重复使用上面的公式</p>
-<p>然后我们会发现顶层的四个顶角已经完全复原，只剩下四个棱块了，下面分为三种情况进行讨论。因为比较复杂，我这没法一一拍出来，所以借用网上的图片。</p>
-<h3 id="情况1-三棱块顺时针"><a href="#情况1-三棱块顺时针" class="headerlink" title="情况1 三棱块顺时针"></a>情况1 三棱块顺时针</h3><img src="/images/d_rubiks_cube/mf5-2.jpeg" width="400" height="600" alt="mf5-2">
-
-<p><strong>公式1：左下-顶左-左上-顶左-左下-顶左-顶左-左上</strong></p>
-<p><strong>公式2：右下-顶右-右上-顶右-右下-顶右-顶右-右上</strong></p>
-<h3 id="情况2-三棱块逆时针"><a href="#情况2-三棱块逆时针" class="headerlink" title="情况2 三棱块逆时针"></a>情况2 三棱块逆时针</h3><img src="/images/d_rubiks_cube/mf5-3.jpeg" width="400" height="600" alt="mf5-3">
-
-<p><strong>公式2：同上</strong></p>
-<p><strong>公式1：同上</strong></p>
-<h3 id="情况3-两两互换"><a href="#情况3-两两互换" class="headerlink" title="情况3 两两互换"></a>情况3 两两互换</h3><img src="/images/d_rubiks_cube/mf5-4.jpeg" width="400" height="600" alt="mf5-4">
-
-<p><strong>公式2：同上</strong></p>
-<p><strong>公式1：同上</strong></p>
-<p><strong>公式1：同上</strong></p>
-<p><strong>公式2：同上</strong></p>
-<p>【待试验】感觉可以尝试不看情况直接公式1或2，然后得到鱼形，再利用鱼形还原公式收割</p>
-<p>于此，大功告成！终于写完了，睡觉！我先感悟几天，下次整理个高级教程！如果大家有能够简化的方法麻烦告诉我（虽然留言板块还没做好，但是尽快！）</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://www.dealmoon.com/guide/946113">https://www.dealmoon.com/guide/946113</a></p>
-<p><a target="_blank" rel="noopener" href="https://baijiahao.baidu.com/s?id=1586020045673476817&amp;wfr=spider&amp;for=pc">https://baijiahao.baidu.com/s?id=1586020045673476817&amp;wfr=spider&amp;for=pc</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/06/14/D-Rubiks-Cube/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
